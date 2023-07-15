@@ -1,67 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
- /* Reset de estilos para el body */
-    body {
-      margin: 0;
-      padding: 0;
-    }
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 60px;
+}
 
-    /* Estilos generales para los encabezados */
-    h1, h2 {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    height: inherit;
+}
 
-    /* Estilos para la sección de inicio */
-    #inicio {
-      padding: 50px;
-      background-color: #FFD1DC;
-    }
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
 
-    #inicio img {
-      width: 150px; /* Cambiar el ancho de la imagen según tu preferencia */
-      height: 150px; /* Cambiar la altura de la imagen según tu preferencia */
-      border-radius: 50%; /* Opcional: agregar bordes redondeados a la imagen */
-    }
-
-
-    /* Estilos para la sección de habilidades */
-    #habilidades {
-      padding: 50px;
-      background-color: #BCE5F5;
-    }
-
-    /* Estilos para la lista de habilidades */
-    #habilidades ul {
-      list-style-type: none;
-    }
-
-    /* Estilos para la sección de proyectos */
-    #proyectos {
-      padding: 50px;
-      background-color: #FFFFC2;
-    }
-
-    /* Estilos para la lista de proyectos */
-    #proyectos ul {
-      list-style-type: none;
-    }
-
-    /* Estilos para la sección de contacto */
-    #contacto {
-      padding: 50px;
-      background-color: #DCE0EA;
-    }
-
-    /* Estilos para la lista de contacto */
-    #contacto ul {
-      list-style-type: none;
-    }
-
-    /* Estilos generales para los párrafos y listas */
-    p, ul {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #333;
-    }
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35px;
+    height: 25px;
+}
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfdfe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #302f2f2c;
+    border-color: #0b0b0b20;
+}
+main .main-input .busqueda-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover {
+    border: 1px solid #c8c9c9;
+    box-shadow: 0 1px 1px #525252;
+    color: #222;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
